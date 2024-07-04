@@ -40,7 +40,7 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Market Indodax'),
+        title: Text('Markets Indodax'),
         actions: [
           DropdownButton<String>(
             value: selectedCurrency,
