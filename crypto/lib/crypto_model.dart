@@ -20,14 +20,14 @@ class Crypto {
   factory Crypto.fromJson(Map<String, dynamic> json) {
     int rank = json['rank'];
     double usd = double.parse(json['price_usd']);
-    double idr = usd * 14000; // Asumsi kurs USD ke IDR adalah 14,000
+    double idr = usd * 16000;
     return Crypto(
       rank: rank,
       name: json['name'],
       symbol: json['symbol'],
       priceUsd: usd,
       priceIdr: idr,
-      priceUsdt: usd, // Asumsi 1 USDT ≈ 1 USD
+      priceUsdt: usd,
     );
   }
 
